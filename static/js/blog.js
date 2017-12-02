@@ -5,17 +5,7 @@ $(document).ready(function() {
 		menu: '#side-bar',
 	});
 	function init() {
-		$('#page-wrap').hide();
-		setTimeout(function () {
-			// debugger;
-			// $('#page-load').hide();
-			// $('#page-wrap').show();
-		}, 6000);
-		$('#scroll-down').click(function(){
-			$(this).hide();
-			$('#page-load').hide();
-			$('#page-wrap').show(500);
-		});
+		
 	}
 	init();
 });
