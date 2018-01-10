@@ -1,96 +1,112 @@
 !!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Dung Nguyen</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../../static/css/style.css" rel="stylesheet">
-        <link href="../../static/images/my-favorite-animal.png" rel="shortcut icon" type="image/x-icon" />
-        <link rel="stylesheet" type="text/css" href="../../static/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../static/css/jquery.fullPage.css">
-        <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="row bor-bg bg">
-                <div class="col-sm-1 vertical-bor hidden-xs"></div>
-                <div class="col-sm-1 vertical-bor hidden-xs"></div>
-                <div class="col-sm-1 vertical-bor hidden-xs"></div>
-                <div class="col-sm-1 vertical-bor hidden-xs"></div>
-                <div class="col-sm-1 vertical-bor hidden-xs"></div>
-                <div class="col-sm-1 vertical-bor hidden-xs"></div>
-                <div class="col-sm-1 vertical-bor hidden-xs"></div>
-                <div class="col-sm-1 vertical-bor hidden-xs"></div>
-                <div class="col-sm-1 vertical-bor hidden-xs"></div>
-                <div class="col-sm-1 vertical-bor hidden-xs"></div>
-                <div class="col-sm-1 vertical-bor hidden-xs"></div>
-                <div class="col-sm-1 vertical-bor hidden-xs"></div>
-            </div>
-            <div id="page-wrap" class="row">
-                <div class="content col-sm-10 col-sm-offset-2">
-                    <div>
-                        <div id="sec1" class="section active">
-                            <h1>DATA Type</h1>
+
+<head>
+    <title>Dung Nguyen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/style.css" rel="stylesheet">
+    <link href="../../static/images/my-favorite-animal.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bor-bg bg">
+            <div class="col-sm-1 vertical-bor hidden-xs"></div>
+            <div class="col-sm-1 vertical-bor hidden-xs"></div>
+            <div class="col-sm-1 vertical-bor hidden-xs"></div>
+            <div class="col-sm-1 vertical-bor hidden-xs"></div>
+            <div class="col-sm-1 vertical-bor hidden-xs"></div>
+            <div class="col-sm-1 vertical-bor hidden-xs"></div>
+            <div class="col-sm-1 vertical-bor hidden-xs"></div>
+            <div class="col-sm-1 vertical-bor hidden-xs"></div>
+            <div class="col-sm-1 vertical-bor hidden-xs"></div>
+            <div class="col-sm-1 vertical-bor hidden-xs"></div>
+            <div class="col-sm-1 vertical-bor hidden-xs"></div>
+            <div class="col-sm-1 vertical-bor hidden-xs"></div>
+        </div>
+        <div id="page-wrap" class="row">
+            <div class="content col-sm-10 col-sm-offset-2">
+                <div>
+                    <div id="sec1" class="section active">
+                        <h1>DATA Type</h1>
+                        <div>
+                            Hôm nay trên công ty bị anh kia chỉ bảo về kiểu dữ liệu.
+                            <br/> Cái này là kiến thức rất là basic mà mình đi làm 3 năm rồi hỏi lại còn giải thích không rõ ràng
+                            <br/> thế nên giận quá về nhà viết cái article về Value type và Reference type, để hiểu hơn và nhớ
+                            lâu hơn.
+
+                        </div>
+                        <div>
+                            <h2>A. WHAT?</h2>
                             <div>
-                                Hôm nay trên công ty bị anh kia chỉ bảo về kiểu dữ liệu.<br/>
-                                Cái này là kiến thức rất là basic mà mình đi làm 3 năm rồi hỏi lại còn giải thích không rõ ràng<br/>
-                                thế nên giận quá về nhà viết cái article về Value type và Reference type, để hiểu hơn và nhớ lâu hơn.
+                                - Vậy Value type và Refernce type là gì?
+                                <br/> Nó là 2 loại kiểu biến trong lập trình thôi các Mẹ ạ.
+                                <br/> Dịch ra tiếng Việt thì là Kiểu dữ liệu và Kiểu tham chiếu.
+                                <br/> Kiểu tham chiếu thì đại diện là thằng Object và Array.
+                                <br/>
+                            </div>
+
+                            <br/>
+                            <br/>
+                            <br/> * Nói nôm na thì là thế này:
+                            <h4>1. Value Type:</h4>
+                            <div>
+                                <code> var a = 1; </code>
+                                <br/> - Lúc mà gõ cái dòng bên trên trong js thì máy tính sẽ tạo ra một stack/box/field/cell (nói
+                                chung là tạo ra một cái chỗ để lưu thôi) để lưu cái số 1 cho thằng a
+                                <br/> - Khi thay đổi giá trị của thằng a thì bộ nhớ cũng cập nhật lại giá trị. Hết film, đơn giản
+                                thế thôi.
+                            </div>
+                            <br/>
+                            <h4>2. Reference Type:</h4>
+                            <div>
+                                - Qua thằng Reference Type thì làm màu hơn thằng Value type tí thôi
+                                <br/> - Lúc mà gõ cái dòng này
+                                <code> var b = {x: 1; y: 2};</code> thì máy tính sẽ tạo ra
+                                <br/> một stack/box/field (nói chung là tạo ra một cái chỗ để lưu thôi) để lưu cái số 1 cho thằng
+                                a
+                                <br/> - Khi đó máy tính sẽ tạo ra hai ô nhớ để lưu địa chỉ của b.
+                                <br/> + Ô thứ nhất lưu địa chỉ là a.
+                                <br/> + Ô thứ 2 lưu địa chỉ là b;
+                                <br/> -- Ví dụ dễ hiểu hơn là thế này:
+                                <br/>
+                                <code>
+                                        var quần = quầnĐùi;</code>
+                                <br/>
+                                <code>
+                                        var áo = áoBông </code>
+                                <br/>
+                                <code> 
+                                        var tủ = {ngănQuần: quần; ngănÁo: áo}; 
+                                    </code>
+                                <br/> - Giả sử trong trường hợp bạn nhờ thằng hàng xóm qua nhà lấy quần áo mang lên công ty giùm
+                                bạn.
+                                <br/> - Bạn sẽ bảo với nó là vào tủ đồ kéo cái ngăn đựng quần ra và lấy cho tao cái quần trong
+                                đó.
+                                <br/> - Thì lúc này não của thằng hàng xóm nó chỉ biết rằng là ừ vô cái tủ -> ngăn quần.
+                                </br/> Điều này giống như thằng máy tính nó lưu cái biến của bạn, nó chỉ lưu cái địa chỉ để lấy
+                                cái quần chứ nó không lưu cái quần của bạn trong đó.
+                                <br/> - Và nếu như tối hôm đó bạn lấy cái quầnĐùi bỏ vô ngăn tủ thì thằng hàng xóm sẽ lấy được
+                                cái quần đùi,
+                                <br/> còn nếu bạn bỏ vào nó cái quần sịp thì thăngf hàng xóm mở ngăn tủ ra sẽ lấy được cái quần
+                                sịp.
 
                             </div>
-                            <div>
-                                <h2>A. WHAT?</h2>
-                                <div>
-                                    - Vậy Value type và Refernce type là gì?<br/>
-                                    Nó là 2 loại kiểu biến trong lập trình thôi các Mẹ ạ.<br/>
-                                    Dịch ra tiếng Việt thì là Kiểu dữ liệu và Kiểu tham chiếu.<br/>
-                                    Kiểu tham chiếu thì đại diện là thằng Object và Array.<br/>
-                                </div>
-                               
-                                <br/>
-                                <br/>
-                                <br/>
-                                * Nói nôm na thì là thế này:
-                                <h4>1. Value Type:</h4>
-                                <div>
-                                    <code> var a = 1; </code><br/>
-                                    - Lúc mà gõ cái dòng bên trên trong js thì máy tính sẽ tạo ra một stack/box/field/cell (nói chung là tạo ra một cái chỗ để lưu thôi) để lưu cái số 1 cho thằng a<br/>
-                                    - Khi thay đổi giá trị của thằng a thì bộ nhớ cũng cập nhật lại giá trị. Hết film, đơn giản thế thôi.
-                                </div>
-                                <br/>
-                                <h4>2. Reference Type:</h4>
-                                <div>
-                                    - Qua thằng Reference Type thì làm màu hơn thằng Value type tí thôi<br/>
-                                    
-                                    - Lúc mà gõ cái dòng này <code> var b = {x: 1; y: 2};</code> thì máy tính sẽ tạo ra <br/>
-                                    một stack/box/field (nói chung là tạo ra một cái chỗ để lưu thôi) để lưu cái số 1 cho thằng a<br/>
-                                    - Khi đó máy tính sẽ tạo ra hai ô nhớ để lưu địa chỉ của b. <br/>
-                                        + Ô thứ nhất lưu địa chỉ là a.<br/>
-                                        + Ô thứ 2 lưu địa chỉ là b;<br/>
-
-                                    -- Ví dụ dễ hiểu hơn là thế này:<br/>
-                                    <code>
-                                        var quần = quầnĐùi;<br/>
-                                        var áo = áoBông<br/>
-                                        var tủ = {ngănQuần: quần; ngănÁo: áo};<br/>
-                                    </code><br/>
-                                    - Giả sử trong trường hợp bạn nhờ thằng hàng xóm qua nhà lấy quần áo mang lên công ty giùm bạn. <br/>
-                                    - Bạn sẽ bảo với nó là vào tủ đồ kéo cái ngăn đựng quần ra và lấy cho tao cái quần trong đó.<br/>
-                                    - Thì lúc này não của thằng hàng xóm nó chỉ biết rằng là ừ vô cái tủ -> ngăn quần. </br/>
-                                    Điều này giống như thằng máy tính nó lưu cái biến của bạn, nó chỉ lưu cái địa chỉ để lấy cái quần chứ nó không lưu cái quần của bạn trong đó.<br/>
-                                    - Và nếu như tối hôm đó bạn lấy cái quầnĐùi bỏ vô ngăn tủ thì thằng hàng xóm sẽ lấy được cái quần đùi, <br/>
-                                    còn nếu bạn bỏ vào nó cái quần sịp thì thăngf hàng xóm mở ngăn tủ ra sẽ lấy được cái quần sịp. 
-
-                                </div>
-                                <h2>The end...</h2>
-                                <h3>Câu chuyện thật đơn giản. Mình ôm gấu ngủ đây bye nhé! Mãi yêu.</h3>
-                            </div>
+                            <h2>The end...</h2>
+                            <h3>Câu chuyện thật đơn giản. Mình ôm gấu ngủ đây bye nhé! Mãi yêu.</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
-    <script type="text/javascript" src="../../static/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../../static/js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript" src="../../static/js/blog.js"></script>
+    </div>
+</body>
+<script type="text/javascript" src="../../static/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../static/js/jquery.fullPage.min.js"></script>
+<script type="text/javascript" src="../../static/js/blog.js"></script>
+
 </html>
